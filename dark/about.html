@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="external/css/about_me.css" rel="stylesheet">
+    <link href="external/css/animation.css" rel="stylesheet">
+
+    <link
+      href="vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="vendor/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="vendor/Hover-master/css/hover.css">
+    <link rel="stylesheet" href="vendor/splide-4.1.3/dist/css/splide.min.css">
+    <link href="vendor/aos-master/dist/aos.css" rel="stylesheet">
+
+    <title>RENNE | ABOUT ME</title>
+  </head>
+  <nav class="navbar row navbar-expand-lg">
+    <div
+      class="col-sm-1 nav-links d-flex align-items-center justify-content-center">
+      <img src="external/img/1.png" class="img-fluid">
+    </div>
+    <div
+      class="col-md-6 nav-links d-flex align-items-center justify-content-center ">
+      <div
+        class="collapse navbar-collapse d-flex align-items-center justify-content-center"
+        id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page"
+              href="main_content.html"> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal"
+              data-bs-target="#navigationModal">
+              Works
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i
+                class="bi bi-disc"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="col-md nav-links d-flex align-items-center justify-content-center">
+      <p>
+        <a href="#" class="btn new-fonter" role="button"
+          data-bs-toggle="button">DARK MODE</a>
+      </p>
+    </div>
+    <div
+      class="col-md nav-links d-flex align-items-center justify-content-center">
+      <a data-bs-toggle="offcanvas" data-bs-target="#shortInfo" 
+      aria-controls="offcanvasRight"><h1><i class="bi bi-list"></i></h1></a>
+    </div>
+  </nav>
+  <body>
+    <div class="container-fluid container-account">
+      <div class="row">
+        <div class="col-md-5 left-panel">
+          <div class="img-img">
+            <img
+              src="/external/img/ad17fca5fb3e53629a9074c294864800.jpg"
+              class="img-fluid fixed-left-panel">
+          </div>
+        </div>
+        <div class="col-md-5 scrollable-right-panel">
+          <h1 class="details">Hi, <span class="namer">Renne</span> or
+            <div class="namer-another">Ahmad</div> Here. I love to code, make
+            creative solutions and write!
+          </h1>
+          <div class="spacer" style="margin-top: 50px"></div>
+          <h1 class="details">WHEN YOU NEED A <div class="namer-another">LOCAL
+              DEVELOPER</div> RENNE IS WHOM YOU'D CALL!</h1>
+          <div class="spacer" style="margin-top: 200px"></div>
+          <h5 class="details">
+            FEEL FREE TO WRITE TO MY EMAIL AT <br>
+            <a class="detail-email"
+              href="mailto:ahmadaquino.2002@gmail.com">ahmadaquino.2002@gmail.com</a>
+            <div class="spacer" style="margin-top: 50px"></div>
+            <button>
+              RESUME
+              <div class="icon">
+                <span>
+                  <i class="bi bi-arrow-up-right-circle-fill"></i>
+                </span>
+              </div>
+            </button>
+            <div class="spacer" style="margin-top: 50px"></div>
+          </h5>
+
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <div class="modal modal-top " id="navigationModal" tabindex="-1"
+    aria-labelledby="navigationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-bg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h1 class="modal-title my-works" id="navigationModalLabel"
+            data-bs-dismiss="modal">MY WORKS</h1>
+
+          <div class="demo1">
+            <div class="main-body" onmousemove=onMouseMove(event)>
+              <div class="text1">
+              </div>
+              <div class="cursor-div">
+                <div class="circular-cursor">
+                  <div>
+                  </div>
+                </div>
+                <div class="container-project">
+                  <a href id="modalTrigger"
+                    class="link-somewhere whitener"><h1>&lt;&#47; APPLICATIONS |
+                      SYSTEMS &gt;</h1></a>
+                </div>
+                <div class="container-project">
+                  <a href id="modalTrigger"
+                    class="link-somewhere whitener"><h1>&lt;&#47; GRAPHICS
+                      &gt;</h1></a>
+                </div>
+                <div class="container-project">
+                  <a href id="modalTrigger" class="link-somewhere whitener">
+                    <h1>&lt;&#47; ESSAYS | ARTICLES &gt;</h1></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    src="vendor/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="vendor/splide-4.1.3/dist/js/splide.min.js"></script>
+  <script src="vendor/aos-master/dist/aos.js"></script>
+
+  <script>
+
+  
+
+const footer = document.querySelector('.footer');
+const letters = document.querySelectorAll('.footer h1');
+
+function handleScroll() {
+    const footerRect = footer.getBoundingClientRect();
+
+    // Check if the footer is fully in the viewport
+    if (
+        footerRect.top >= 0 &&
+        footerRect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        letters.forEach((letter, index) => {
+            setTimeout(() => {
+                letter.classList.add('active');
+            }, index * 100); // Add a delay to create a staggered effect
+        });
+        // Remove the scroll event listener once the animation is triggered
+        window.removeEventListener('scroll', handleScroll);
+    }
+}
+
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+// Initial check in case the footer is already in view on page load
+handleScroll();
+
+document.addEventListener( 'DOMContentLoaded', function() {
+var splide = new Splide( '.splide', {
+type   : 'loop',
+perPage: 2,
+focus  : 'center',
+} );
+
+splide.mount();
+} );
+
+var modalContent = document.querySelector('.modal-content');
+var modalTrigger = document.getElementById('modalTrigger');
+var animationPlayed = false;
+
+modalTrigger.addEventListener('click', function (event) {
+event.preventDefault();
+if (!animationPlayed) {
+  modalContent.classList.add('hide-animation');
+  animationPlayed = true;
+}
+});
+
+let cursor;
+cursor = document.getElementsByClassName("circular-cursor")[0];
+cursor.style.position = "absolute";
+
+function onMouseMove(e) {
+cursor.animate(
+{
+  left: `${e.clientX - 120}px`,
+  top: `${e.clientY - 120}px`
+},
+{ duration: 1000, fill: "forwards" }
+);
+}
+
+let cursor_1;
+cursor_1 = document.getElementsByClassName("circular-cursor-1")[0];
+cursor_1.style.position = "absolute";
+
+function onMouseMove_1(e) {
+cursor_1.animate(
+{
+  left: `${e.clientX - 120}px`,
+  top: `${e.clientY - 120}px`
+},
+{ duration: 1000, fill: "forwards" }
+);
+};
+</script>
+  <script>
+    AOS.init();
+</script>
+</html>

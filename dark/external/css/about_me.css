@@ -1,0 +1,317 @@
+@font-face{
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit/Kanit-Regular.ttf')
+}
+
+@font-face{
+  font-family: 'Oxygen';
+  src: url('../fonts/Oxygen/Oxygen-Regular.ttf')
+}
+
+@font-face{
+  font-family: 'Bebas Neue';
+  src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf')
+}
+
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: black !important;
+  font-family: "Kanit" !important;
+}
+
+nav {
+  padding: 0;
+  color: white;
+  background-color: black !important;
+}
+
+.navbar {
+  background-color: black !important;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  padding-top: 5vh !important;
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-weight: bolder !important;
+}
+
+.nav-links {
+  padding: 20px;
+  border: 1px solid white;
+  height: 120px;
+  text-transform: uppercase;
+  font-weight: bolder !important;
+}
+
+.new-fonter {
+  font-weight: bolder !important;
+  color: white !important;
+}
+
+.black-content {
+  background-color: black !important;
+  color: white;
+}
+
+.header {
+  font-size: 36px;
+}
+
+.thicken {
+  font-weight: bolder;
+}
+
+.thin {
+  font-weight: lighter;
+}
+
+.bottom-spacer {
+  margin-bottom: 20px;
+}
+
+.diamond-icon {
+  font-size: smaller !important;
+}
+
+.spanner {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.my-works {
+  font-size: 100px !important;
+  text-align: right;
+}
+
+.left-panel {
+  left: 60px;
+  bottom: 5px;
+  position: relative;
+  height: 100%;
+  padding: 10px;
+}
+
+.fixed-left-panel {
+  position: fixed;
+  background-color: black;
+  padding: 10px;
+  height: 60% !important;
+  border-radius: 20px;
+  animation: pictureAnim 3s ease 0s infinite normal forwards;
+}
+
+.namer-another .creative-namer {
+  display: inline-block;
+}
+
+.scrollable-right-panel {
+  box-sizing: border-box;
+  height: 200vh;
+}
+
+.details {
+  margin-left: 10px;
+  padding: 10px;
+  width: 95%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 52px;
+}
+
+.modal {
+  cursor: none;
+}
+
+.modal-body, .my-works {
+  font-family: "Bebas Neue", sans-serif;
+  cursor: none !important;
+}
+
+.container-project {
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  padding: 25px;
+  cursor: none;
+  transition: background 0.3s ease, color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.container-project:hover, .link-somewhere:hover .whitener:hover .floating-div {
+  background-color: white;
+  color: black !important;
+  opacity: 1;
+}
+
+.floating-div {
+  position: fixed;
+  top: 0;
+  right: 50px;
+  width: 100px;
+  height: 500px;
+  background-color: #b30c0c;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.link-somewhere:hover .container-project:hover .floating-div {
+  opacity: 1;
+}
+
+.whitener {
+  color: white;
+  cursor: none;
+}
+
+.whitener:hover {
+  color: black;
+  cursor: none;
+}
+
+.footer {
+  padding-top: -25px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.footer-letter {
+  display: inline-block;
+  font-size: 426px;
+  font-family: "Kanit" !important;
+  text-align: center;
+  padding-bottom: -30px;
+  padding-top: -30px;
+  line-spacing: 30px;
+  color: white;
+}
+
+.footer-container {
+  background-color: black;
+  color: white;
+  font-family: "Oxygen" !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.link {
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+  transition: font-weight 0.3s ease;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.link:hover {
+  font-weight: bold;
+}
+
+.link-bot {
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+  transition: font-weight 0.3s ease;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.link-bot:hover {
+  font-weight: bold;
+}
+
+.righter {
+  text-align: right;
+}
+
+.one-liner {
+  display: inline;
+  text-align: right !important;
+}
+
+button {
+  display: flex;
+  padding: 1rem 2rem 1rem 3rem;
+  border-radius: 25rem;
+  background-color: white;
+  transition: all 0.5s ease;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border: none;
+  font-size: 18px;
+  color: black;
+}
+
+button .icon {
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .icon span {
+  background: black;
+  border-radius: 100%;
+  padding: 0rem;
+  width: 0rem;
+  height: 0rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-180deg);
+  transition: all 0.5s ease;
+}
+
+button:hover .icon span {
+  background-color: black;
+  color: white;
+  transform: rotate(0deg);
+  border-radius: 100%;
+  padding: 0.6rem;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.detail-email {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+.detail-email:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.detail-email:hover::before {
+  width: 100%;
+}/*# sourceMappingURL=about_me.css.map */

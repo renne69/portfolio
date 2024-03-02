@@ -1,0 +1,418 @@
+::-moz-selection {
+  background-color: black;
+  color: white;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+html {
+  background-color: black;
+  font-family: "Kanit" !important;
+}
+
+nav {
+  padding: 0;
+  color: white;
+  background-color: black !important;
+}
+
+.navbar {
+  background-color: black !important;
+  padding-left: 5vw !important;
+  padding-right: 5vw !important;
+  padding-top: 5vh !important;
+}
+
+.nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  margin-right: 30px;
+  font-weight: bolder !important;
+}
+
+.nav-links {
+  padding: 20px;
+  border: 1px solid white;
+  height: 120px;
+  text-transform: uppercase;
+  font-weight: bolder !important;
+}
+
+.new-fonter {
+  font-weight: bolder !important;
+  color: white !important;
+}
+
+.black-content {
+  background-color: black !important;
+  color: white;
+}
+
+.header {
+  font-size: 36px;
+}
+
+.thicken {
+  font-weight: bolder;
+}
+
+.thin {
+  font-weight: lighter;
+}
+
+.bottom-spacer {
+  margin-bottom: 20px;
+}
+
+.diamond-icon {
+  font-size: smaller !important;
+}
+
+.btn-discover {
+  margin-top: 20px;
+  border: 1px solid white !important;
+  padding: 10px;
+  font-weight: light;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  transition: padding 0.3s ease, font-weight 0.4s ease;
+}
+
+.content-left {
+  width: 75%;
+}
+
+.btn-discover:hover {
+  font-weight: bolder;
+  padding: 12px;
+}
+
+.button-linker {
+  padding-top: 69px;
+  height: 100%;
+  cursor: pointer;
+  font-weight: bolder;
+  text-transform: uppercase !important;
+}
+.button-linker > .btn-linker {
+  transform: translateX(0%) translateY(0%);
+  transition: 0.3s ease-in-out;
+}
+.button-linker:hover > #btn1 {
+  transform: translateX(-5%) translateY(-24%);
+  transition: 0.3s ease-in-out;
+}
+.button-linker:hover > #btn2 {
+  transform: translateX(-2%) translateY(-12%);
+  transition: 0.3s ease-in-out;
+}
+
+.btn-linker {
+  margin-top: 20px;
+  position: absolute;
+  width: 288px;
+  height: 70px;
+  color: white;
+  font-size: 1.5rem;
+  border: solid 2px black;
+  border-radius: 4px;
+  font-weight: bolder;
+  text-transform: uppercase !important;
+}
+
+#btn1 {
+  background: black;
+  z-index: 3;
+}
+
+#btn2 {
+  background: white;
+  z-index: 2;
+}
+
+#btn3 {
+  background: grey;
+  z-index: 1;
+}
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Kanit" !important;
+  text-transform: uppercase;
+  font-size: 64px;
+}
+
+.marquee {
+  white-space: nowrap;
+  animation: marquee 16s alternate-reverse infinite;
+}
+
+.marquee-1 {
+  white-space: nowrap;
+  animation: marquee 20s alternate infinite;
+}
+
+.container-blog {
+  background-color: black;
+  color: white;
+  padding: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sidebar {
+  font-family: "Kanit" !important;
+}
+
+.input-frm-search {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.no-bullet {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-sidebar {
+  color: white;
+  position: relative;
+  overflow: none;
+  text-decoration: none;
+}
+
+.link-sidebar:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: width 0.2s ease;
+  background-color: white;
+  height: 1px;
+}
+
+.link-sidebar:hover::before {
+  width: 100%;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.post {
+  margin-bottom: 20px;
+}
+
+.no-liner {
+  border-radius: none !important;
+  border: none !important;
+  font-size: larger;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 12px;
+  border: 1px solid white;
+  padding: 5px;
+  transition: background-color 0.5s ease, color 0.4s ease;
+  margin-right: 5px;
+}
+
+.tag:hover {
+  background-color: white;
+  color: black;
+}
+
+.blog-img {
+  height: 50% !important;
+}
+
+.container-blog {
+  width: 90%;
+}
+
+.title-post {
+  margin-top: 10px;
+  font-family: "Bebas Neue";
+}
+
+.short-desc-post {
+  font-family: "Kanit" !important;
+  margin-top: 20px;
+}
+
+.btn-read-post {
+  margin-top: 20px;
+  font-family: "Kanit" !important;
+  padding: 10px;
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.2s ease-in;
+}
+
+.btn-read-post:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+.spanner {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.my-works {
+  font-size: 100px !important;
+  text-align: right;
+}
+
+.modal {
+  cursor: none;
+}
+
+.modal-body, .my-works {
+  font-family: "Bebas Neue", sans-serif;
+  cursor: none !important;
+}
+
+.container-project {
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+  padding: 25px;
+  cursor: none;
+  transition: background 0.3s ease, color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.container-project:hover, .link-somewhere:hover .whitener:hover .floating-div {
+  background-color: white;
+  color: black !important;
+  opacity: 1;
+}
+
+.floating-div {
+  position: fixed;
+  top: 0;
+  right: 50px;
+  width: 100px;
+  height: 500px;
+  background-color: #b30c0c;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.link-somewhere:hover .container-project:hover .floating-div {
+  opacity: 1;
+}
+
+.whitener {
+  color: white;
+  cursor: none;
+}
+
+.whitener:hover {
+  color: black;
+  cursor: none;
+}
+
+.cursor-div {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none;
+}
+
+.cursor-div-1 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none;
+}
+
+.footer {
+  padding-top: -25px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.footer-letter {
+  display: inline-block;
+  font-size: 426px;
+  font-family: "Kanit" !important;
+  text-align: center;
+  padding-bottom: -30px;
+  padding-top: -30px;
+  line-spacing: 30px;
+}
+
+.footer-container {
+  background-color: black;
+  color: white;
+  font-family: "Oxygen" !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.link {
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+  transition: font-weight 0.3s ease;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.link:hover {
+  font-weight: bold;
+}
+
+.link-bot {
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+  transition: font-weight 0.3s ease;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.link-bot:hover {
+  font-weight: bold;
+}
+
+.righter {
+  text-align: right;
+}
+
+.one-liner {
+  display: inline;
+  text-align: right !important;
+}/*# sourceMappingURL=blogs.css.map */
