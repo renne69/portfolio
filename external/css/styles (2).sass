@@ -1,0 +1,549 @@
+::selection
+  background-color: black
+  color: white
+  
+html
+    background-color: black
+    font-family: 'Kanit' !important
+    
+nav
+    padding: 0
+    color: white
+    background-color: black !important
+
+.navbar
+    background-color: black !important
+    padding-left: 5vw !important
+    padding-right: 5vw !important
+    padding-top: 5vh !important
+
+.nav-link
+    color: white !important
+    text-transform: uppercase
+    margin-right: 30px
+    font-weight: bolder !important
+
+.nav-links
+    padding: 20px
+    border: 1px solid white
+    height: 120px
+    text-transform: uppercase
+    font-weight: bolder !important
+
+
+
+.new-fonter
+    font-weight: bolder !important
+    color: white !important
+
+.black-content
+    background-color: black !important
+    color: white
+
+.header
+    font-size: 36px
+
+.thicken
+    font-weight: bolder
+
+.thin
+    font-weight: lighter
+
+.bottom-spacer
+    margin-bottom: 20px
+
+.diamond-icon
+    font-size: smaller !important
+
+.btn-discover
+    margin-top: 20px
+    border: 1px solid white !important
+    padding: 10px
+    font-weight: light
+    text-transform: uppercase
+    background-color: black
+    color: white
+    transition: padding 0.3s ease, font-weight 0.4s ease
+
+.content-left
+    width: 75%
+
+.btn-discover:hover
+    font-weight: bolder
+    padding: 12px
+
+.button-linker
+    padding-top: 69px
+    height: 100%
+    cursor: pointer
+    font-weight: bolder
+    text-transform: uppercase !important
+
+    > .btn-linker
+        transform: translateX(0%) translateY(0%)
+        transition: 0.3s ease-in-out
+
+    &:hover > #btn1
+        transform: translateX(-5%) translateY(-24%)
+        transition: 0.3s ease-in-out
+
+    &:hover > #btn2
+        transform: translateX(-2%) translateY(-12%)
+        transition: 0.3s ease-in-out
+
+.btn-linker
+  margin-top: 20px
+  position: absolute
+  width: 288px
+  height: 70px
+  color: white
+  font-size: 1.5rem
+  border: solid 2px black
+  border-radius: 4px
+  font-weight: bolder
+  text-transform: uppercase !important
+
+#btn1
+  background: black
+  z-index: 3
+
+#btn2
+  background: white
+  z-index: 2
+
+#btn3
+  background: grey
+  z-index: 1
+
+
+  //body
+
+.arc-container
+    width: 100%
+    height: 75vh
+    background-color: black !important
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center  
+    text-align: center   
+    position: relative
+    transition: filter 0.3s ease
+
+.background-video 
+  background-color: black !important
+  width: 100%
+  height: 100%
+  object-fit: cover
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+  left: 0
+  width: 100%
+  height: 100%
+  border-radius: 50% 50% 0 0
+  filter: grayscale(85%)
+  position: absolute
+  top: 0
+  left: 0
+  transition: filter 0.5s, color 0.5s
+
+.background-video:hover, .header-video:hover
+    filter: invert(100%)
+    color: white
+
+
+.header-video 
+    z-index: 1
+    color: white
+    font-size: 124px !important
+    position: relative
+    color: white
+    transition: color 0.3s ease
+
+.header-video::after
+    content: ""
+    display: block
+    width: 0
+    height: 2px
+    background-color: black
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    transition: width 0.3s, opacity 0.3s
+    opacity: 0
+    filter: invert(100%)
+    color: black
+
+.cursor
+  font-size: 100px
+  pointer: none
+
+.linker-left-profile
+  color: black
+  text-decoration: none
+
+.upside-down
+  transform: rotate(180deg)
+  writing-mode: tb-rl
+  text-transform: uppercase
+  
+
+.upside-down-text
+  font-size: 12vmin
+  font-weight: bold
+  font-family: 'Kanit' !important
+  text-align: center
+
+.offcanvas-profile
+  width: fit-content !important
+  background-color: black !important
+  color: white !important
+
+
+  
+.header-video:hover::after 
+    color: black
+    width: 100%
+    opacity: 1
+
+.info-section
+    background-color: black
+    padding-top: 50px
+  
+.header-topic
+    font-family: 'Kanit' !important
+    color: white
+
+.subdesc-topic
+    font-family: 'Oxygen' !important
+    color: white
+
+.space-topper
+    margin-top: 65px
+
+.jagged-button
+    font-family: 'Oxygen' !important
+    font-weight: bolder
+    color: black
+    background-color: white
+    height: 250px
+    width: 250px
+    clip-path: polygon(20% 14%, 89% 6%, 98% 49%, 79% 61%, 61% 64%, 41% 71%, 21% 68%)
+    transition: height 0.2s ease-out, width 0.2ss ease-out
+
+
+.jagged-button:hover
+    clip-path: polygon(20% 0%, 0% 20%, 3% 50%, 0% 80%, 26% 87%, 46% 70%, 75% 85%, 100% 80%, 84% 54%, 100% 20%, 80% 0%, 49% 10%)
+    height: 225px
+    width: 225px
+
+
+//marquee at top
+    
+.marquee-container 
+  overflow: hidden
+  width: 100%
+  background-color: black
+  color: white
+  font-family: "Kanit" !important
+  text-transform: uppercase
+  font-size: 64px
+
+
+.marquee 
+  white-space: nowrap
+  animation: marquee 16s alternate-reverse infinite
+
+
+.marquee-1 
+  white-space: nowrap
+  animation: marquee 20s alternate infinite
+
+.marquee-3
+  white-space: nowrap
+  animation: marquee 6s alternate-reverse infinite
+
+
+.marquee-4
+  white-space: nowrap
+  animation: marquee 8s alternate infinite
+
+
+
+@keyframes marquee 
+  0% 
+    transform: translateX(100%)
+  
+  100% 
+    transform: translateX(-100%)
+  
+
+//modal 
+
+.spanner 
+  display: inline-block
+  padding-right: 20px
+
+.my-works
+    font-size: 100px !important
+    text-align: right
+
+.modal
+    cursor: none
+
+.modal-body, .my-works
+   font-family: 'Bebas Neue', sans-serif
+   cursor: none !important
+    
+.container-project
+    width: 100%
+    height: auto
+    border: 1px solid white
+    padding: 25px
+    cursor: none
+    transition: background 0.3s ease, color 0.2s ease
+    position: relative
+    overflow: hidden
+    display: inline-block
+
+.container-project:hover, .link-somewhere:hover .whitener:hover .floating-div
+    background-color: white
+    color: black !important
+    opacity: 1
+
+.floating-div 
+    position: fixed
+    top: 0
+    right: 50px
+    width: 100px
+    height: 500px
+    background-color: #b30c0c
+    opacity: 0
+    transition: opacity 0.3s ease
+  
+
+.link-somewhere:hover .container-project:hover .floating-div 
+    opacity: 1
+  
+.whitener
+    color: white
+    cursor: none
+
+.whitener:hover
+    color: black
+    cursor: none
+
+.cursor-div 
+  position: absolute
+  z-index: 1
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  cursor: none
+
+.cursor-div-1
+  position: absolute
+  z-index: 1
+  width: 100%
+  height: 100vh
+  overflow: hidden
+  cursor: none
+  
+
+
+.info-section-1
+  display: block
+  background-color: white
+  height: 120vh
+  color: black
+  transition: background-color 0.5s ease
+  font-family: 'Kanit' !important
+
+.info-section-1 
+  background-color: black
+
+.info-section-content
+  border-top: 1px solid black
+  margin-top: 25%
+
+.info-section-right-header
+  margin-top: 10px
+  margin-bottom: 15px
+
+.breaker
+  display: block
+
+.container-works
+  color: white
+  background-color: white
+  height: 110vh
+  transition: background-color 0.5s ease
+
+.container-works
+  background-color: black
+
+
+.best-works
+  padding-top: 100px
+  padding-bottom: 100px
+  font-family: 'Kanit' !important
+  margin: 0px auto
+  text-align: center
+
+
+.content-best-works
+  margin-top: 45px
+
+.best-work-individual
+  margin-top: 20px
+
+#video-container 
+  position: relative
+  overflow: hidden
+
+#video-container video 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+  opacity: 0
+  transition: opacity 0.3s ease
+
+#video-container video:hover
+   transition: opacity 0.3s ease
+
+.best-works 
+  position: relative
+  z-index: 1
+
+
+.content-best-works 
+  position: relative
+  z-index: 1
+
+
+.best-work-individual 
+  position: relative
+  z-index: 2
+
+.center 
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+.center-img
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0px auto
+
+
+.profile-content
+  margin: 0px auto
+  position: relative
+  display: block
+  justify-content: center
+  align-items: center
+  width: 100% !important
+
+.profile-content-account
+  margin-top: 50px
+  padding-bottom: 100px
+
+.profile-container
+  padding-bottom: 30px
+  background-color: black
+  display: block
+  justify-content: center
+  align-items: center
+
+.arc-profile
+    display: block
+    justify-content: center
+    align-items: center
+    margin: 0px auto
+    height: 100px 
+    background-color: white
+    border-top-left-radius: 50% 50%
+    border-top-right-radius: 50% 50%
+    object-fit: fit
+    border: 10px solid white
+
+.behind-text 
+    display: block
+    margin: 0px auto
+    justify-content: center
+    align-items: center
+    font-family: 'Kanit' !important
+    color: white
+    width: 100%
+    text-align: center
+    width: 30%
+
+.line-name
+  border-bottom: 1px solid white
+
+.smallest-text
+  font-size: 16px
+
+
+.footer
+  padding-top: -25px
+  text-align: center
+  color: white
+  background-color: black
+
+.footer-letter
+  display: inline-block
+  font-size: 426px
+  font-family: 'Kanit' !important
+  text-align: center
+  padding-bottom: -30px
+  padding-top: -30px
+  line-spacing: 30px
+
+.footer-container
+  background-color: black
+  color: white
+  font-family: 'Oxygen' !important
+  padding-left: 30px !important
+  padding-right: 30px !important
+
+.link
+  color: white
+  text-transform: none
+  text-decoration: none
+  transition: font-weight 0.3s ease
+  position: relative
+  display: inline-block
+  text-decoration: none
+  overflow: hidden
+  z-index: 2
+
+.link:hover
+  font-weight: bold
+
+.link-bot
+  color: white
+  text-transform: none
+  text-decoration: none
+  transition: font-weight 0.3s ease
+  position: relative
+  display: inline-block
+  text-decoration: none
+  overflow: hidden
+  z-index: 2
+
+.link-bot:hover
+  font-weight: bold
+
+.righter
+  text-align: right
+
+.one-liner
+  display: inline
+  text-align: right !important

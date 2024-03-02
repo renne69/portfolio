@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RENNE</title>
+
+    <link href="vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="external/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/splide-4.1.3/dist/css/splide.min.css">
+    
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="external/img/2.ico" type="image/x-icon">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<style>
+
+  .marquee-container {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .marquee-icons-left {
+      animation: marqueeLeft 10s linear infinite;
+      white-space: nowrap;
+    }
+
+    .marquee-icons-right {
+      animation: marqueeRight 10s linear infinite;
+      white-space: nowrap;
+    }
+
+    @keyframes marqueeLeft {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
+    @keyframes marqueeRight {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(100%); }
+    }
+
+    .icon-group {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .iconics {
+      font-size: 4em;
+      margin-right: 10px;
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand name-agency" href="index.html">renne<sup>©</sup></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-auto" id="navbarText">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">home.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-nav-link" href="#">about.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-nav-link" href="#">contact.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hover-nav-link" href="#">portfolio.</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+            <h1 class="nav-icon"><ion-icon name="apps"></ion-icon></h1>
+        </span>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <div class="container-fluid carousel-part">
+        <h1 class="bold larger-text">let's turn your ideas // wonders into reality.</h1>     
+        <div class="splide">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <h1><ion-icon name="arrow-back-circle" class="arrow"></ion-icon></h1>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <h1 > <ion-icon name="arrow-forward-circle" class="arrow" ></ion-icon></h1>
+            </button>
+          <div class="splide__track box-carousel">
+            <ul class="splide__list">
+              <li class="splide__slide mx-auto">
+                
+                <div class="icon-group mx-auto container-fluid container-carousel">
+                  <div class="row">
+                    <div class="col column-l">
+                      <ion-icon name="logo-html5" class="iconics"></ion-icon>
+                    </div>
+                    <div class="col  column-r">
+                      <ion-icon name="logo-css3" class="iconics"></ion-icon>
+                    </div>
+                  </div>
+                    <div class="row">
+                    <div class="col  column-r">
+                      <ion-icon name="logo-javascript" class="iconics"></ion-icon>
+                    </div>
+                    <div class="col  column-l">
+                      <ion-icon name="logo-react" class="iconics"></ion-icon>
+                    </div>
+                  </div>
+                  <br>
+                  <p class="text-prog">frontend.</p>
+                </div>
+              </li>
+
+              <li class="splide__slide mx-auto"> 
+                <div class="icon-group mx-auto container-fluid container-carousel">
+                  <div class="row">
+                    <div class="col">
+                      <img src ="external/img/logo.png" class="img-fluid">
+                    </div>
+                    <div class="col column-l">
+                      <ion-icon name="logo-nodejs" class="iconics"></ion-icon>
+                    </div>
+                    <div class="col  ">
+                      <ion-icon name="logo-python" class="iconics"></ion-icon>
+                    </div>
+                  </div>
+                  <br>
+                <p class="text-prog">backend + multi-platforms.</p>
+              </div>
+            </li>
+
+            <li class="splide__slide mx-auto"> 
+              <div class="icon-group mx-auto container-fluid container-carousel">
+                <div class="row">
+                  <div class="col column-l">
+                    <ion-icon name="logo-stackoverflow" class="iconics"></ion-icon>
+                  </div>
+                  <div class="col  column-r">
+                    <ion-icon name="logo-docker" class="iconics"></ion-icon>
+                  </div>
+                  <div class="col  column-l">
+                    <ion-icon name="logo-github" class="iconics"></ion-icon>
+                  </div>
+                  <div class="col  column-r">
+                <ion-icon name="logo-gitlab" class="iconics"></ion-icon>
+                  </div>
+                 
+                </div>
+
+                  <div class="row">
+                    <ion-icon name="logo-npm" class="iconics"></ion-icon>
+                    <div class="col  column-l">
+                  <ion-icon name="logo-sass" class="iconics"></ion-icon>
+                </div>
+                    <ion-icon name="logo-slack" class="iconics"></ion-icon>
+                 
+              </div>
+              <br>
+              <p class="text-prog">platforms.</p>
+              </li>
+
+            
+
+                <li class="splide__slide mx-auto"> 
+                  <div class="icon-group mx-auto container-fluid container-carousel">
+                    <div class="row">
+                      <div class="col">
+                        <ion-icon name="logo-android" class="iconics"></ion-icon>
+                      </div>
+                      <div class="col column-l">
+                        <ion-icon name="logo-microsoft" class="iconics"></ion-icon>
+                      </div>
+                      <div class="col  ">
+                        <ion-icon name="logo-apple" class="iconics"></ion-icon>
+                      </div>
+                    </div>
+                    <br>
+                  <p class="text-prog">technologies.</p>
+                  </div>
+                  </li>
+   
+            </ul>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-fluid about-container">
+      <h1 class="about-renne">about renne.</h1>
+      <h1>renne = <a href="#" class="name"><span class="name">ahmad aquino.</span></a></h1>
+      <div class="row about-row">
+        <div class="col-md-4">
+          <h3 class="space-from-above">renne stems from an archetypal monument of artifacts lingering in 
+            written mode that was once the awakened fever dream hopping from
+            dimensions to dimension. <b>[this simply means it was a penname.]</b>
+          </h3>
+        </div>
+        <div class="col-sm column-l column-turns-black">
+          <h5 class="space-from-above">now, it has went through evolution to make itself much more 
+            evident and prominent for the world to see - obtaining the ability to create more than just words.
+            it has become not only the dictatorship but also god, in being.
+            <b>[this simply means it can create things, for the time being.]</b>
+          </h5>
+        </div>
+        <div class="col-sm column-l column-turns-black">
+          <h5 class="space-from-above">people revolve their beings around its large and thorn-filled wings, hoping to see a semblance
+            or ounce of companionship but all they can witness in its demesne is nothing but the creator.
+            <b>[this simply means it aids people into creationship of systems, art and words.]</b>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="about-portfolio">portfolio.</h1>
+
+    <div class="container-fluid portfolio-section">
+    
+      <div class="splide splidee">
+      <section id="image-carousel"  aria-label="Beautiful Images">
+        <div class="splide__track row">
+          <ul class="splide__list">
+            <section> </section>
+            <li class="splide__slide">
+              <div class="col content-portfolio white-bg">
+               <h1>1</h1>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="col content-portfolio"> </div>
+            </li>
+            <li class="splide__slide">
+              <div class="col content-portfolio"> </div>
+              <div class="col content-portfolio white-bg">
+                <h1>systems.</h1>
+              </div>
+            </li>
+            <section> </section>
+            <li class="splide__slide">
+              <div class="col topper content-portfolio">
+              <h1>systems.</h1>
+              <h1>e-learning system.</h1>
+            </div>
+            <div class="col bottomer content-portfolio">
+              <h1>bitcraft.</h1>
+              <br>
+              <p>... helped as the lead programmer in creating the user side.</p>
+              <p>... created a local area network connection module that allows the system to work
+                in a server-client network architecture.</p>
+            </div>
+            </li>
+            <li class="splide__slide">
+              <div class="col content-portfolio white-bg">
+                <img src="external/img/systems/5.png" class="img-fluid">
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="col content-portfolio">
+              </div>
+              <div class="col content-portfolio white-bg">
+                <img src="external/img/systems/5.png" class="img-fluid">
+              </div>
+            </li>
+            <section> </section>
+            <li class="splide__slide">
+              <div class="col content-portfolio"> </div>
+              <div class="col content-portfolio"> </div>
+            </li>
+
+
+              <li class="splide__slide">
+                <div class="col topper content-portfolio">
+                <h1>systems.</h1>
+                <h1>e-commerce system.</h1>
+              </div>
+              <div class="col bottomer content-portfolio">
+                <h1>k-iqna.</h1>
+                <br>
+                <p>... helped in creating the front-end and back-end modules</p>
+                <p>... created a working gcash api that would serve to execute payments.</p>
+                <p>... created user functionalities such as order tracking, revenue history, order history,
+
+                </p>
+              </div>
+              </li>
+              <li class="splide__slide">
+                <div class="col content-portfolio">
+                </div>
+                <div class="col content-portfolio white-bg">
+                  <img src="external/img/systems/2.png" class="img-fluid">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="col content-portfolio white-bg">
+                  <img src="external/img/systems/2.png" class="img-fluid">
+                </div>
+                <div class="col content-portfolio">
+                </div>
+              </li>
+              <section> </section>
+              <li class="splide__slide">
+                <div class="col content-portfolio"> </div>
+                <div class="col content-portfolio"> </div>
+              </li>
+  
+  
+                <li class="splide__slide">
+                  <div class="col topper content-portfolio">
+                  <h1>systems.</h1>
+                  <h1>image recognition and well-being system.</h1>
+                </div>
+                <div class="col bottomer content-portfolio">
+                  <h1>canscan</h1>
+                  <br>
+                  <p>... assisted in creating the image recognition module in provision with Google's ML Kit.</p>
+                  <p>... integrated room database that allows the application to run offline.</p>
+                  <p>... made the user interface of the application feel much more at home.
+                  </p>
+                </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="col content-portfolio">
+                  </div>
+                  <div class="col content-portfolio white-bg">
+                    <img src="external/img/systems/3.png" class="img-fluid">
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="col content-portfolio white-bg">
+                    <img src="external/img/systems/3.png" class="img-fluid">
+                  </div>
+                  <div class="col content-portfolio">
+                  </div>
+                </li>
+                <section> </section>
+                <li class="splide__slide">
+                  <div class="col content-portfolio"> </div>
+                  <div class="col content-portfolio"> </div>
+                </li>
+
+              <li class="splide__slide">
+                <div class="col content-portfolio"></div>
+              <div class="col content-portfolio white-bg">
+               <h1>2</h1>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="col content-portfolio"> </div>
+              <div class="col content-portfolio"> </div>
+            </li>
+            <li class="splide__slide">
+              <div class="col content-portfolio white-bg">
+                <h1>graphic designs</h1>
+               </div>
+              <div class="col content-portfolio"></div>
+            
+          </li>
+          <li class="splide__slide">
+            <div class="col content-portfolio"> </div>
+            <div class="col content-portfolio"> </div>
+          </li>
+          <section> </section>
+
+            <li class="splide__slide">
+              <div class="col topper content-portfolio">
+              <h1>graphic designs.</h1>
+              <h5>y2k poster</h5>
+              <h5>pop art poster</h5>
+              <h5>grunge poster</h5>
+              <h5>retro poster</h5>
+              <h5>skeumorphic poster</h5>
+            </div>
+            <div class="col bottomer content-portfolio">
+              <h1>titles.</h1>
+              <h5>aespa greet party</h5>
+              <h5>gusion 1v1 tournament</h5>
+              <h5>nct 127 concert poster</h5>
+              <h5>kai (exo) poster</h5>
+              <h5>newjeans poster</h5>
+            </div>
+            </li>
+            <li class="splide__slide content-portfolio">
+              <div class="col-sm">
+                <img src="external/img/graphic designs/1.png" class="img-fluid">
+              </div>
+            </li>
+            <li class="splide__slide content-portfolio">
+              <div class="col-sm">
+                <img src="external/img/graphic designs/4.png" class="img-fluid">
+              </div>
+            </li>
+            <li class="splide__slide content-portfolio">
+              <div class="col-sm">
+                <img src="external/img/graphic designs/7.png" class="img-fluid">
+              </div>
+            </li>
+            <li class="splide__slide content-portfolio">
+              <div class="col-sm">
+                <img src="external/img/graphic designs/AQUINO_POSTER_1.png" class="img-fluid">
+              </div>
+            </li>
+            <li class="splide__slide content-portfolio">
+              <div class="col-sm">
+                <img src="external/img/graphic designs/AQUINO_POSTER.png" class="img-fluid">
+              </div>
+            </li>
+          
+            <section> </section>
+            <li class="splide__slide">
+              <div class="col content-portfolio"> </div>
+              <div class="col content-portfolio"> </div>
+            </li>
+            <li class="splide__slide">
+              <div class="col content-portfolio white-bg">
+                <h1>view more.</h1>
+               </div>
+               <div class="col content-portfolio white-bg">
+                <h1>view more.</h1>
+               </div>
+              <div class="col content-portfolio"></div>
+              <li class="splide__slide">
+                <div class="col content-portfolio"> </div>
+                <div class="col content-portfolio"> </div>
+              </li>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid contact-section">
+      <h1 class="work-with-me-text">wanna work with me?</h1>
+        <div class="next-level">
+          <h5 class="bold larger-text">let's take it to the next level.</h5>
+          <br>
+          <div class="no-accordion" id="accordionExample">
+            <button class="btn-show collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <span class='lets-go-text'><span class="dot">•</span> let's go</span>
+            </button>
+            <div class="accordion-item">
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <form action="" method="post" class="work-form">
+
+                    <div class="row info-row">
+                      <p class="bold left">whatcha' name?</p>
+                        <div class="col-sm">
+                          <input type="text" class="input-form" name="first_name" placeholder="First Name" required>
+                        </div>
+                        <div class="col-sm">
+                          <input type="text" class="input-form" name="last_name" placeholder="Last Name" required>
+                        </div>
+                        <div class="col-sm">
+                          <input type="email" class="input-form" name="last_name" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row work-row">
+                      <p class="bold left">whatchu' wanna do?</p>
+                      <div class="col-sm">
+                        <div class="card info-work">
+                          <div class="card-header">
+                            <div class="">
+                              <input class="work-checkbox" type="radio" id="frontend_design" value="frontend_design" name="work">
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <h5 class="card-title">frontend design.</h5>
+                            <p class="card-text">Get a fresh site designed from scratch or get your site redesigned at last.</p>
+                          </div>   
+                        </div>
+                      </div>
+
+                         <div class="col-sm">
+                          <div class="card info-work">
+                            <div class="card-header">
+                              <div class="">
+                                <input class="work-checkbox" type="radio" id="backend_dynamics" value="backend_dynamics" name="work">
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">backend dynamics.</h5>
+                              <p class="card-text">Get the functionality of your application working, have some data running or just have some data stored.</p>
+                            </div>   
+                          </div>
+                      </div>
+
+                        <div class="col-sm">
+                          <div class="card info-work">
+                            <div class="card-header">
+                              <div class="">
+                                <input class="work-checkbox" type="radio" id="frontend_design" value="frontend_design" name="work">
+                              </div>
+                            </div>
+                            <div class="card-body">
+                              <h5 class="card-title">fullstack creation.</h5>
+                              <p class="card-text">Get a fully functional web application or system working and running.</p>
+                            </div>   
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="row work-row">
+                    <p class="bold left">i'll hear you out</p>
+                    <div class="col-sm">
+                      <textarea class="main-message" name="main-message"></textarea>  
+                    </div>
+                  </div>
+                  <input type="submit" class="sbmt-btn" name="send_it" value="send_it">
+                  </form>
+                   </div>
+              </div>
+            </div>
+            </div>  
+        </div>
+          </div>
+      </div>
+
+      <div class="container-fluid container-works">
+        
+        <div class="row">
+          <div class="col-md left-works">
+            <div class="content-accordion">
+                  <button class="btn-accordion" 
+                  data-bs-toggle="collapse" data-bs-target="#firstItem" 
+                  aria-expanded="true" aria-controls="firstItem">
+                       <div class="each-work row">
+                <div class="col-sm-2 work-content">
+                  <h1 class="work-content number">01</h1>
+                </div>
+                <div class="col-md work-content">
+                  <h3 class="work-content">systems.</h3>
+                </div>
+                <div class="col-sm-1 work-content">
+                  <h3 class="work-content"><ion-icon name="arrow-redo-outline"></ion-icon></h3>
+                </div>
+              </div>
+                  </button>
+                <div id="firstItem" 
+                class="accordion-collapse collapse " 
+                data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h1>works to be added</h1>
+                  </div>
+                </div>
+            </div>
+
+            <div class="content-accordion">
+              <button class="btn-accordion" 
+              data-bs-toggle="collapse" data-bs-target="#secondItem" 
+              aria-expanded="true" aria-controls="secondItem">
+              <div class="each-work row">
+                <div class="col-sm-2 work-content">
+                  <h1 class="work-content number">02</h1>
+                </div>
+                <div class="col-md work-content">
+                  <h3 class="work-content">applications.</h3>
+                </div>
+                <div class="col-sm-1 work-content">
+                  <h3 class="work-content"><ion-icon name="arrow-redo-outline"></ion-icon></h3>
+                </div>
+              </div>
+              </button>
+            <div id="secondItem" 
+            class="accordion-collapse collapse " 
+            data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h1>works to be added</h1>
+              </div>
+            </div>
+        </div>
+
+        <div class="content-accordion">
+          <button class="btn-accordion" 
+          data-bs-toggle="collapse" data-bs-target="#thirdItem" 
+          aria-expanded="true" aria-controls="thirdItem">
+          <div class="each-work row">
+            <div class="col-sm-2 work-content">
+              <h1 class="work-content number">03</h1>
+            </div>
+            <div class="col-md work-content">
+              <h3 class="work-content">web designs.</h3>
+            </div>
+            <div class="col-sm-1 work-content">
+              <h3 class="work-content"><ion-icon name="arrow-redo-outline"></ion-icon></h3>
+            </div>
+          </div>
+          </button>
+        <div id="thirdItem" 
+        class="accordion-collapse collapse " 
+        data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <h1>works to be added</h1>
+          </div>
+        </div>
+    </div>
+
+    <div class="content-accordion">
+      <button class="btn-accordion" 
+      data-bs-toggle="collapse" data-bs-target="#fourthItem" 
+      aria-expanded="true" aria-controls="fourthItem">
+      <div class="each-work row">
+        <div class="col-sm-2 work-content">
+          <h1 class="work-content number">04</h1>
+        </div>
+        <div class="col-md work-content ">
+          <h3 class="work-content">graphic posters.</h3>
+        </div>
+        <div class="col-sm-1 work-content">
+          <h3 class="work-content"><ion-icon name="arrow-redo-outline"></ion-icon></h3>
+        </div>
+      </div>
+      </button>
+    <div id="fourthItem" 
+    class="accordion-collapse collapse " 
+    data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <h1>works to be added</h1>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid legend-container">
+  <h1>the man, the myth, the legend.</h1>
+</div>
+
+
+
+           
+            
+
+          
+
+          
+          </div>
+          <div class="col-md-6">
+            <video src="external/videos/intro vid.mp4" autoplay muted class="img-fluid" loop>
+          </div>
+        </div>
+      </div>
+    
+    
+
+    
+</body>
+ 
+ 
+<script src="vendor/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/ionicons/ionicons.esm.js"></script>
+<script src="vendor/ionicons/ionicons.js"></script>
+<script src="vendor/ionicons.js"></script>
+<script src="vendor/splide-4.1.3/dist/js/splide.min.js"></script>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+var splideworks = new Splide( '.splidee', {
+  perPage: 3,
+  rewind : true,
+  type   : 'loop',
+          drag   : 'free',
+          snap   : true,
+          arrows: false,
+          pagination: false,
+          autoplay: true,
+} );
+splideworks.mount();
+} );
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide( '.splide', {
+          type   : 'loop',
+          drag   : 'free',
+          snap   : true,
+          pagination: false,
+} );
+
+splide.mount();
+      });
+      
+      
+   
+
+        
+    </script>
+
+</html>

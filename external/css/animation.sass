@@ -1,0 +1,383 @@
+.modal-top
+   animation: myAnim-in 1s ease 0s 1 normal forwards
+   color: white !important
+   background-color: black !important
+
+.modal-bg, .modal-content, .modal
+    background-color: black !important
+
+.modal-content.hide-animation
+    animation: myAnim-out 1.5s ease 0s 1 normal forwards
+
+#modalTrigger
+    animation: myAnim-out 1.5s ease 0s 1 normal forwards
+
+.my-works
+    animation: my-work 0.5s ease 0s 5 normal forwards
+
+
+@keyframes myAnim-in 
+    0% 
+        transform: scaleY(0)
+        transform-origin: 100% 0%
+	
+    100% 
+        transform: scaleY(1)
+        transform-origin: 100% 0%
+
+@keyframes myAnim-out 
+    0% 
+        transform: scaleY(1)
+        transform-origin: 0% 100%
+    100% 
+        transform: scaleY(0)
+        transform-origin: 0% 100%
+
+@keyframes my-work 
+    0%,
+    50%,
+    100% 
+        opacity: 1
+	
+    25%,
+    75% 
+        opacity: 0
+	
+
+.circular-cursor 
+  width: 150px
+  height: 150px
+  animation: colorChange 5s linear infinite
+  background-color: white
+  cursor: pointer
+  left: 0%
+  top: 0%
+  z-index: 9999
+
+.circular-cursor-1
+  width: auto
+  height: fit-content
+  background-color: transparent
+  pointer: none
+  left: 0%
+  top: -20%
+  border-radius: 100px
+  z-index: 1
+
+.circular-cursor-2
+  width: auto
+  height: fit-content
+  background-color: black
+  color: white
+  pointer: none
+  z-index: 9999
+  padding: 10px
+  border-radius: 100%
+  font-size: 50px
+
+.circular-cursor-3
+  width: auto
+  height: fit-content
+  background-color: white
+  color: black
+  pointer: none
+  z-index: 9999
+  padding: 10px
+  border-radius: 100%
+  font-size: 50px
+
+
+
+@keyframes colorChange 
+  0% 
+    background-color: white
+    border-top-left-radius: 20%
+    border-top-right-radius: 40%
+    border-bottom-left-radius: 10%
+    border-bottom-right-radius: 80%
+    box-shadow: 0 0 40px white
+  
+  20% 
+    background-color: white
+    border-top-left-radius: 90%
+    border-top-right-radius: 60%
+    border-bottom-left-radius: 40%
+    border-bottom-right-radius: 70%
+    box-shadow: 0 0 40px white
+  
+  40% 
+    background-color: white
+    border-top-left-radius: 130%
+    border-top-right-radius: 70%
+    border-bottom-left-radius: 100%
+    border-bottom-right-radius: 50%
+    box-shadow: 0 0 40px white
+
+  60% 
+    background-color: white
+    border-top-left-radius: 100%
+    border-top-right-radius: 120%
+    border-bottom-left-radius: 70%
+    border-bottom-right-radius: 90%
+    box-shadow: 0 0 40px white
+  
+  80% 
+    background-color: white
+    border-top-left-radius: 70%
+    border-top-right-radius: 150%
+    border-bottom-left-radius: 100%
+    border-bottom-right-radius: 50%
+    box-shadow: 0 0 40px white
+  
+  100% 
+    background-color: white
+    border-top-left-radius: 20%
+    border-top-right-radius: 40%
+    border-bottom-left-radius: 10%
+    border-bottom-right-radius: 80%
+    box-shadow: 0 0 40px white
+  
+
+
+.demo1:hover .circular-cursor, .demo-1:hover .circular-cursor-1, 
+.demo2:hover .circular-cursor-2, .demo3:hover .circular-cursor-3
+  /*   display: block; */
+
+    
+.info-section-header
+  font-size: 264px
+  left: -20%
+  top: 0%
+  position: relative
+  animation: jelloText 5s ease 1s infinite normal both
+
+.info-section-header-1
+  font-size: 264px
+  left: -20%
+  top: 0%
+  position: relative
+  animation: jelloText 3s ease 1s infinite normal both
+
+@keyframes jelloText
+  100% 
+    transform: translateX(0%)
+    transform-origin: 50% 50%
+  15% 
+    transform: translateX(-30px) rotate(-6deg)
+
+  30% 
+    transform: translateX(15px) rotate(6deg)
+
+  45% 
+    transform: translateX(-15px) rotate(-3.6deg)
+
+  60% 
+    transform: translateX(9px) rotate(2.4deg)
+
+  75% 
+    transform: translateX(-6px) rotate(-1.2deg)
+
+.info-section-right-content
+  display: inline-block
+  position: relative
+  font-size: medium
+
+.info-section-right-content::before
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 0
+    height: 1px
+    background-color: black
+    transition: width 0.3s ease
+
+.info-section-right-content:hover::before
+    width: 100%
+    
+.info-section-image
+  position: absolute
+  left: calc(40% + 10px)
+  max-width: 300px
+  height: auto
+  opacity: 0
+  transition: opacity 0.3s ease
+  z-index: -1
+  border: 1px solid black
+  border-radius: 5px
+
+
+.info-section-div:hover .info-section-image
+  opacity: 1 !important
+  z-index: 1
+
+.link:before 
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 0
+  height: 2px
+  background-color: white
+  transition: width 0.3s ease
+    
+
+.link:hover:before 
+  width: 100%
+
+.link-bot:before 
+  content: ""
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 0
+  height: 2px
+  background-color: white
+  transition: width 0.3s ease
+    
+
+.link-bot:hover:before 
+  width: 100%
+
+.left-rect
+  animation: loadingAnim 2s ease 1.8s 1 normal forwards
+
+.lefter-rect
+  animation: loadingAnim 2s ease 1.8s 1 normal forwards
+
+.middle-rect
+  animation: loadingAnim 2s ease 1.8s 1 normal forwards
+
+.righter-rect
+  animation: loadingAnim 2s ease 1.8s 1 normal forwards
+
+.right-rect
+  animation: loadingAnim 2s ease 1.8s 1 normal forwards
+
+@keyframes loadingAnim 
+  0% 
+    opacity: 0
+    transform: translateY(250px)
+	
+
+  100% 
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes loadingAnimTop 
+  0% 
+    opacity: 0
+    transform: translateY(-250px)
+	
+
+  100% 
+    opacity: 1
+    transform: translateY(0)
+
+
+.left-rect-1 
+  animation: loadingAnimFirst 1.0s linear 0s 1 normal forwards
+
+
+.lefter-rect-1 
+  animation: loadingAnimFirst 1.2s linear 0s 1 normal forwards
+
+
+.middle-rect-1 
+  animation: loadingAnimFirst 1.4s linear 0s 1 normal forwards
+
+
+.righter-rect-1 
+  animation: loadingAnimFirst 2.0s linear 0s 1 normal forwards
+
+
+.right-rect-1 
+  animation: loadingAnimFirst 2.2s linear 0s 1 normal forwards
+
+
+@keyframes loadingAnimFirst 
+  0% 
+    opacity: 0
+    transform: translateX(-250px)
+    display: block
+  
+  25% 
+    opacity: 0.25
+    transform: translateX(-125px)
+    display: block
+  
+  50% 
+    opacity: 0.5
+    transform: translateX(0)
+    display: block
+  
+  75% 
+    opacity: 0.25
+    transform: translateX(125px)
+    display: block
+
+  100% 
+    opacity: 0
+    transform: translateX(250px)
+    display: block
+  
+  100%
+    display: none
+  
+@keyframes pictureAnim 
+  0% 
+    transform: scale(1)
+	
+  50% 
+    transform: scale(1.05)
+	
+
+  100% 
+    transform: scale(1)
+	
+.namer
+  animation: namerAnim 3s ease 0s infinite alternate forwards
+
+.namer-another
+  animation: namerAnimNew 3s ease 0s infinite alternate forwards
+  
+
+@keyframes namerAnim 
+  0% 
+    opacity: 0
+    transform: translateY(-250px)
+	
+  100% 
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes namerAnimNew 
+  0% 
+    transform: translate(0)
+  10% 
+    transform: translate(-2px, -2px)
+  20% 
+    transform: translate(2px, -2px)
+  30% 
+    transform: translate(-2px, 2px)
+  40% 
+    transform: translate(2px, 2px)
+  50% 
+    transform: translate(-2px, -2px)
+  60% 
+    transform: translate(2px, -2px)
+  70% 
+    transform: translate(-2px, 2px)
+  80% 
+    transform: translate(-2px, -2px)
+  90% 
+    transform: translate(2px, -2px)
+  100% 
+    transform: translate(0)
+
+@keyframes marquee 
+  0% 
+    transform: translateX(100%)
+  
+  100% 
+    transform: translateX(-100%)
